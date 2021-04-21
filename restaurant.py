@@ -33,3 +33,21 @@ def printActionsMenu( items, title = None ):
  
  option = int( input( ">>> " ))
  return option
+
+
+def createOrderItem( food, item_i, item_q ):
+  
+  return {
+    "name":food[item_i]['name'],
+    "quantity":item_q,
+    "price":{
+      "amount": item_q * food[item_i]['price']['amount'],
+      "currency": "MDL"
+    }    
+  }
+
+
+
+
+
+

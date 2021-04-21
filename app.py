@@ -29,9 +29,12 @@ while True:
    printItems( food, "TODAYS MENU" )
  
  if( action == 2 ):
+   printItems( food, "TODAYS MENU" )
    item_i = int( input( "Which item? >>> " )) - 1
    item_q = int( input( f"How many < {food[item_i]['name']} > do you want? >>> " ))
-
+   order["items"].append(
+           createOrderItem( food, item_i, item_q )
+        )
  if( action == 3):
    printItems( order["items"], "YOUR ORDER" )
    
