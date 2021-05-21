@@ -27,5 +27,70 @@
        "currency": "MDL"
     },
     "avail": 50
+  },
+
+  {
+    "name": "Pizza",
+    "price": {
+       "amount": 75.00,
+       "currency": "MDL"
+    },
+    "avail": 12
+  },
+
+  {
+    "name": "Steak",
+    "price": {
+       "amount": 105.00,
+       "currency": "MDL"
+    },
+    "avail": 3
+  },
+
+  {
+    "name": "French fries",
+    "price": {
+       "amount": 21.00,
+       "currency": "MDL"
+    },
+    "avail": 13
+  },
+
+
+  {
+    "name": "Cheeseburger",
+    "price": {
+       "amount": 9.00,
+       "currency": "MDL"
+    },
+    "avail": 20
+  },
+
+
+  {
+    "name": "Pancakes",
+    "price": {
+       "amount": 3.20,
+       "currency": "MDL"
+    },
+    "avail": 150
+  },
+
+  {
+    "name": "Mushroom soup",
+    "price": {
+       "amount": 72.00,
+       "currency": "MDL"
+    },
+    "avail": 14
+  },
+
+  {
+    "name": "Okroshka on kvass",
+    "price": {
+       "amount": 32.00,
+       "currency": "MDL"
+    },
+    "avail": 7
   }
 ]

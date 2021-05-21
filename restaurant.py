@@ -2,19 +2,21 @@
 
 from os import system
 
-def printItems( items, title = None ):
+def printItems( items, title = None ):#showQuantity = False
  
  system( "clear" )
 
  if( title != None ):
-  print( "#" * 30 )
-  print( title ) 
- print( "#" * 30 )
+  print( "#" * 42 )
+  print( f" {title}" ) 
+ print( "#" * 42 )
+ print( f" nr. name               price per serving" )
+ print( "#" * 42 )
  for i in range( len( items ) ):
      print(
-     f"{i + 1:2} {items[i]['name']:15} {items[i]['price']['amount']:7.2f} { items[i]['price']['currency']} "
+     f"{i + 1:3} {items[i]['name']:25} {items[i]['price']['amount']:7.2f} { items[i]['price']['currency']} "#{ items x 2}
   )
- print( "#" * 30 )
+ print( "#" * 42 )
  input( "hit ENTER to continue ..." )
 
 
@@ -31,7 +33,7 @@ def printActionsMenu( items, title = None ):
   )
  print( "#" * 20 )
  
- option = int( input( ">>> " ))
+ option = int( input( " Select menu item >>> " ))
  return option
 
 

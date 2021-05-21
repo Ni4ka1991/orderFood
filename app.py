@@ -1,4 +1,4 @@
-#!/usr/bin/env Python3
+#!/usr/bin/env python3
 
 # app.py
 
@@ -10,6 +10,11 @@ from restaurant import *
 food = load( 'food')
 order = {
   "items": [],
+#  "total": {# = 0
+#      "amount": 0, #all food in order * quantity
+#      "currency": "MDL"
+      
+#      },
   
 
 }
@@ -20,7 +25,8 @@ while True:
     [
        "Show food",
        "Order food",
-       "Show order ", 
+       "Show order ",
+       "Checkout",
        "Exit"
     ],
     "MAIN MENU" 
@@ -35,11 +41,15 @@ while True:
    order["items"].append(
            createOrderItem( food, item_i, item_q )
         )
+   #order["total"].append( "amount" : food[item_i]['name']['price'])
  if( action == 3):
+#if order["items "] != "":
    printItems( order["items"], "YOUR ORDER" )
+#else:
+#print( "Empty list" )
    
     
 
- if( action == 4 ):
+ if( action == 5 ):
    break
 
