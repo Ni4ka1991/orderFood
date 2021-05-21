@@ -35,12 +35,21 @@ while True:
    printItems( food, "TODAYS MENU" )
  
  if( action == 2 ):
-   printItems( food, "TODAYS MENU" )
-   item_i = int( input( "Which item? >>> " )) - 1
-   item_q = int( input( f"How many < {food[item_i]['name']} > do you want? >>> " ))
-   order["items"].append(
-           createOrderItem( food, item_i, item_q )
+   system( "clear" )
+   print()
+   print( "Enter > to continue select item.\n\
+           Enter x to return in main menu."\
         )
+   navigator = input( " >>> " )
+   while ( navigator == ">" ):
+       printItems( food, "TODAYS MENU" )
+       item_i = int( input( "Which item? >>> " )) - 1
+       item_q = int( input( f"How many < {food[item_i]['name']} > do you want? >>> " ))
+       order["items"].append(
+              createOrderItem( food, item_i, item_q )
+        )
+       printItems( order["items"], "YOUR ORDER" )
+       
    #order["total"].append( "amount" : food[item_i]['name']['price'])
  if( action == 3):
 #if order["items "] != "":
